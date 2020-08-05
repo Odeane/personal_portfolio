@@ -1,0 +1,15 @@
+  {
+  "main": {
+    "name": "Odeane Croney",
+    "occupation": "Junior Full-Stack Web Developer",
+    "email": "croneyodeane@gmail.com",
+    "phone": "+46 76-264 03 66",
+    "address": {
+      "street": "",
+      "city": "",
+      "state": "",
+      "zip": ""
+    },
+    "image": ""
+  }
+}
