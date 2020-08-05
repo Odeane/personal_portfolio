@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Nav from '../components/nav/Nav'
+import Header from '../components/Header/Header'
 import axios from 'axios'
 
 
@@ -15,24 +16,23 @@ class HomePage extends Component {
   getResumeData = async () => {
     const response = await axios.get('./ResumeData.json')
     this.setState({ resumeData: response.data })
-    console.log(response.data)
+    // console.log(response.data.main)
   }
 
   componentDidMount() {
     this.getResumeData()
   }
 
-
-
   render() {
+   
+
     return (
       <div>
         <Nav />
+        <Header data={this.state.resumeData.main}/>
       </div>
     );
   }
-
-
 }
 
 

@@ -1,5 +1,5 @@
 describe('Portfolio interface', () => {
-  beforeEach(() => {
+  before(() => {
     cy.visit('http://localhost:3000');
   })
   
@@ -13,6 +13,6 @@ describe('Portfolio interface', () => {
 
   it('Page should successfully render a header', () => {
     cy.get('h1').should('contain', "Hello, I'm Odeane Croney.")
-    cy.get('h3').should('contain', "I'm a full-stack web developer based in Sweden.") 
+    cy.get('h3').should('contain', "I'm a Junior Full-Stack Web Developer based in Sweden.") 
   })
 })
