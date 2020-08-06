@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Navi from '../components/nav/Nav'
 import Header from '../components/Header/Header'
 import axios from 'axios'
+import About from '../components/About/About';
+
 
 
 class HomePage extends Component {
@@ -29,7 +31,8 @@ class HomePage extends Component {
     return (
       <div>
         <Navi />
-        <Header data={this.state.resumeData.main}/>
+        <Header data={this.state.resumeData.main} />
+        <About data={this.state.resumeData.main}/>
       </div>
     );
   }

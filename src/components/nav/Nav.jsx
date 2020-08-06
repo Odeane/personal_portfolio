@@ -10,7 +10,7 @@ function Navi() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="justify-content-center">
-            <Nav.Link href="#home">ABOUT</Nav.Link>
+            <Nav.Link href="#about">ABOUT</Nav.Link>
             <Nav.Link href="#projects">PROJECTS</Nav.Link>
             <Nav.Link href="#resume">RESUME</Nav.Link>
             <Nav.Link href="#contact">CONTACT</Nav.Link>
