@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Container from 'react-bootstrap/Container'
+import Button from 'react-bootstrap/Button'
 
 class Header extends Component {
   
@@ -9,9 +11,24 @@ class Header extends Component {
       console.log(name)
     }
     return (
-      <div>
-        <h1 id='namn'>Hello, I'm {name}.</h1>
-        <h3>{occupation}</h3>
+      <div className="container" id="home-container">
+        <div className="jumbotron text-center text-white">
+          
+            <Container>
+
+              <h1 id='namn'>Hello, I'm {name}.</h1>
+              <p>{occupation}</p>
+              <p>
+                <Button variant="primary">VEIW PROJECTS</Button>
+              </p>
+            </Container>
+
+         
+        </div>
+
+
+        
+
       </div>
     )
   }

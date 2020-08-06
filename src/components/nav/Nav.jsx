@@ -18,8 +18,6 @@ function Navi() {
         </Navbar.Collapse>
       </Navbar>
     </div>
-
   )
 }
-
 export default Navi;
