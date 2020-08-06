@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
+import './Header.style.scss'
 
 class Header extends Component {
   
@@ -11,25 +12,20 @@ class Header extends Component {
       console.log(name)
     }
     return (
-      <div className="container" id="home-container">
-        <div className="jumbotron text-center text-white">
-          
+      <header>
+        <div className="row banner">
+          <div className="banner-text">
             <Container>
-
-              <h1 id='namn'>Hello, I'm {name}.</h1>
-              <p>{occupation}</p>
+              <h1 className="headline">Hello, I'm {name}.</h1>
+              <p id='occu'>{occupation}</p>
               <p>
-                <Button variant="primary">VEIW PROJECTS</Button>
+                <Button variant="primary">VIEW PROJECTS</Button>
               </p>
             </Container>
-
-         
+          </div>
         </div>
-
-
-        
-
-      </div>
+      </header>
+      
     )
   }
 }

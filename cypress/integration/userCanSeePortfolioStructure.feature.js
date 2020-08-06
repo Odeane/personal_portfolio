@@ -13,6 +13,6 @@ describe('Portfolio interface', () => {
 
   it('Page should successfully render a header', () => {
     cy.get('h1').should('contain', "Hello, I'm Odeane Croney.")
-    cy.get('h3').should('contain', "I'm a Junior Full-Stack Web Developer based in Sweden.") 
+    cy.get('#occu').should('contain', "I'm a Junior Full-Stack Web Developer based in Stockholm, Sweden.") 
   })
 })

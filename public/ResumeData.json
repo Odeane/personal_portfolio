@@ -1,14 +1,14 @@
 {
   "main": {
     "name": "Odeane Croney",
-    "occupation": "I'm a Junior Full-Stack Web Developer based in Sweden.",
+    "occupation": "I'm a Junior Full-Stack Web Developer based in Stockholm, Sweden.",
     "email": "croneyodeane@gmail.com",
     "phone": "+46 76-264 03 66",
     "address": {
-      "street": "sfdgs",
-      "city": "",
-      "state": "",
-      "zip": ""
+      "street": "Björksundsslingan 15",
+      "city": "Bandhagen",
+      "state": "Stockholm",
+      "zip": "12431"
     },
     "image": ""
   }
