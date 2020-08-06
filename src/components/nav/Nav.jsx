@@ -1,15 +1,25 @@
 import React from 'react'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
 
-function Nav() {
+function Navi() {
   return (
-    <div className ='heading'>
-      <a href='#'>HOME</a>
-      <a href='#'>ABOUT</a>
-      <a href='#'>PROJECTS</a>
-      <a href='#'>RESUME</a>
-      <a href='#'>CONTACT</a>
+    <div className='heading'>
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar.Brand href="#home">HOME</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="justify-content-center">
+            <Nav.Link href="#home">ABOUT</Nav.Link>
+            <Nav.Link href="#projects">PROJECTS</Nav.Link>
+            <Nav.Link href="#resume">RESUME</Nav.Link>
+            <Nav.Link href="#contact">CONTACT</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     </div>
+
   )
 }
 
-export default Nav
+export default Navi;

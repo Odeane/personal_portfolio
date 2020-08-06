@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Nav from '../components/nav/Nav'
+import Navi from '../components/nav/Nav'
 import Header from '../components/Header/Header'
 import axios from 'axios'
 
@@ -28,7 +28,7 @@ class HomePage extends Component {
 
     return (
       <div>
-        <Nav />
+        <Navi />
         <Header data={this.state.resumeData.main}/>
       </div>
     );
