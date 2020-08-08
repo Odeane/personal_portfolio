@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Container } from 'react-bootstrap';
+import Image from 'react-bootstrap/Image'
 
 class About extends Component {
   
@@ -15,7 +17,12 @@ class About extends Component {
     return (
       <div id='about'>
         <h1 id='about-head'>About</h1>
-        <img src={require('./images/avatar.jpeg')}alt='avatar'/>
+        <Container>
+          <row>
+            <Image src={require('./images/avatar2.jpeg')} alt='avatar' rounded />
+          </row> 
+        </Container>
+       
         <p>{bio}</p>
       </div>
     );
