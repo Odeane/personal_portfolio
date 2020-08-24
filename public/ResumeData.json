@@ -1,7 +1,7 @@
 {
   "main": {
     "name": "Odeane Croney",
-    "occupation": "I'm a Junior Full-Stack Web Developer based in Stockholm, Sweden.",
+    "occupation": "I'm a Full-Stack Web Developer based in Stockholm, Sweden.",
     "email": "croneyodeane@gmail.com",
     "phone": "+46 76-264 03 66",
     "address": {
@@ -11,6 +11,12 @@
       "zip": "12431"
     },
     "image": "/Users/odeanecroney/Documents/craft_academy/personal_portfolio/src/components/About/images/avatar.jpeg",
-    "bio": "Pellentesque in ipsum id orci porta dapibus.Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula."
+    "bio": "Pellentesque in ipsum id orci porta dapibus.Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.",
+    "social": {
+      "instagram": "https://www.instagram.com/king_croney/",
+      "facebook": "",
+      "linkedin": "https://www.linkedin.com/in/odeane-croney-2584471b2/",
+      "github": "https://github.com/Odeane"
+    } 
   }
 }

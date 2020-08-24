@@ -1,5 +1,3 @@
-body { background: #0f0f0f; }
-
 .jumbotron {
   background-position: center center;
   background-repeat: no-repeat;
@@ -7,63 +5,84 @@ body { background: #0f0f0f; }
   height: 425px;
 }
 
-header{
- position: relative;
-   height: 810px;
-   min-height: 500px;
-   width: 100%;
-   background: #161415 url(./images/computer.jpg) no-repeat top center;
-   background-size: cover !important;
-	-webkit-background-size: cover !important;
-   text-align: center;
-   overflow: hidden;
-   
+header {
+  position: relative;
+  height: 810px;
+  min-height: 500px;
+  width: 100%;
+  background: #161415 url(./images/computer.jpg) no-repeat top center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  text-align: center;
+  overflow: hidden;
 }
 header:before {
-   content: '';
-   display: inline-block;
-   vertical-align: middle;
-   height: 100%;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
 }
 header .banner {
-   display: inline-block;
-   vertical-align: middle;
-   margin: 0 auto;
-   width: 85%;
-   padding-bottom: 30px;
-   padding-top: 30px;
-   text-align: center;
-   background-color: rgba(0,0,0, 0.6);
-   border-radius: 2em;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 85%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2em;
 }
 
-header .banner-text { width: 100%; }
+header .banner-text {
+  width: 100%;
+}
 header .banner-text h1 {
-   font: 90px/1.1em 'opensans-bold', sans-serif;
-   color: #fff;
-   letter-spacing: -2px;
-   margin: 0 auto 18px auto;
-   text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+  font: 90px/1.1em "opensans-bold", sans-serif;
+  color: #fff;
+  letter-spacing: -2px;
+  margin: 0 auto 18px auto;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
 }
 header .banner-text h3 {
-   font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #A8A8A8;
-   margin: 0 auto;
-   width: 70%;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+  font: 18px/1.9em "librebaskerville-regular", serif;
+  color: #a8a8a8;
+  margin: 0 auto;
+  width: 70%;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
-   color: #fff;
+  color: #fff;
 }
 header .banner-text hr {
-   width: 60%;
-   margin: 18px auto 24px auto;
-   border-color: #2F2D2E;
-   border-color: rgba(150, 150, 150, .1);
+  width: 60%;
+  margin: 18px auto 24px auto;
+  border-color: #2f2d2e;
+  border-color: rgba(150, 150, 150, 0.1);
 }
 
-#occu{
+.social a{
+  color: #f2c64d;
+  font-size: 30px;
+  padding-right: 13px;
+  text-decoration: none;
+  
+}
+
+#occu {
   color: white;
   font-size: 20px;
+}
+
+#project-btn {
+  position: absolute;
+  top: 720px;
+  left: 50%;
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+  border-radius: 2px solid #fff;
+  border-radius: 60px;
+  height: 60 + x;
 }

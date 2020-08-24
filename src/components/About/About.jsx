@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Container } from 'react-bootstrap';
-import Image from 'react-bootstrap/Image'
+import './About.style.scss'
 
 class About extends Component {
   
@@ -17,13 +16,18 @@ class About extends Component {
     return (
       <div id='about'>
         <h1 id='about-head'>About</h1>
-        <Container>
-          <row>
-            <Image src={require('./images/avatar2.jpeg')} alt='avatar' rounded />
-          </row> 
-        </Container>
-       
-        <p>{bio}</p>
+        <div className="decoyimg">
+        Image Placeholder
+        </div>
+
+        {/*<div className="avatar_image">
+          <img src={require('./images/avatar.jpeg')} />
+    </div>*/}
+        
+        <div className="bio">
+          <p>{bio}</p>
+        </div>
+        
       </div>
     );
   }
