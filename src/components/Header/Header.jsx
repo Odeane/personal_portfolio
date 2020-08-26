@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Container from 'react-bootstrap/Container'
 import './Header.style.scss'
+import ArrowDropDownCircleIcon from '@material-ui/icons/ArrowDropDownCircle';
 
 class Header extends Component {
   
@@ -33,7 +34,7 @@ class Header extends Component {
         </header>
         <section>
           <div className="down-btn">
-            <a id='project-btn' href='#project'><i id='arrows' className="fa fa-angle-double-down" aria-hidden="true"></i> </a>
+            <a href='#project'><ArrowDropDownCircleIcon id='project-btn'/></a>
           </div>
         </section>
       </div>
