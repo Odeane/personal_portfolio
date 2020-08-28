@@ -15,6 +15,7 @@ class Header extends Component {
       
     }
     return (
+      <>
       <div className="heads">
         <header>
           <div className="row banner">
@@ -32,13 +33,14 @@ class Header extends Component {
             </div>
           </div>
         </header>
-        <section>
+        <section> 
+          </section>
           <div className="down-btn">
-            <a href='#project'><ArrowDropDownCircleIcon id='project-btn'/></a>
-          </div>
-        </section>
-      </div>
-      
+            <a href='#project'><ArrowDropDownCircleIcon id='project-btn' /></a>
+          </div>  
+        </div>
+        
+      </>
       
     )
   }
