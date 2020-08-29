@@ -3,6 +3,7 @@ import Navi from '../components/nav/Nav'
 import Header from '../components/Header/Header'
 import axios from 'axios'
 import About from '../components/About/About';
+import Resume from '../components/Resume/Resume';
 
 
 
@@ -32,7 +33,8 @@ class HomePage extends Component {
       <div>
         <Navi />
         <Header data={this.state.resumeData.main} />
-        <About data={this.state.resumeData.main}/>
+        <About data={this.state.resumeData.main} />
+        <Resume/>
       </div>
     );
   }

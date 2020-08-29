@@ -25,10 +25,10 @@ class Header extends Component {
                 <p id='occu'>{occupation}</p>
               </Container>
               <div className="social">
-                <a href={github}><i className="fa fa-github" aria-hidden="true"></i> </a> 
-                <a href={linkedin}><i className="fa fa-linkedin" aria-hidden="true"></i> </a> 
-                <a href={instagram}><i className="fa fa-instagram" aria-hidden="true"></i> </a>
-                <a href={'placeholder'}><i className="fa fa-facebook" aria-hidden="true"></i> </a>
+                <a href={github}><i className="fa fa-github" aria-hidden="true"></i></a> 
+                <a href={linkedin}><i className="fa fa-linkedin" aria-hidden="true"></i></a> 
+                <a href={instagram}><i className="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href={'placeholder'}><i className="fa fa-facebook" aria-hidden="true"></i></a>
               </div>              
             </div>
           </div>
