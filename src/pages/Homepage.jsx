@@ -4,6 +4,7 @@ import Header from '../components/Header/Header'
 import axios from 'axios'
 import About from '../components/About/About';
 import Resume from '../components/Resume/Resume';
+import Project from '../components/Projects/Projects'
 
 
 
@@ -34,6 +35,7 @@ class HomePage extends Component {
         <Navi />
         <Header data={this.state.resumeData.main} />
         <About data={this.state.resumeData.main} />
+        <Project/>
         <Resume/>
       </div>
     );
