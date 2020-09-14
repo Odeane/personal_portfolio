@@ -24,7 +24,7 @@ function Homepage() {
     <div>
       <Navi />
       <Header data={resumeData.main} />
-      <About data={resumeData.main} />
+      <About about={resumeData.main} />
       <Project />
       <Resume />
     </div>
