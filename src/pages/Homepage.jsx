@@ -13,7 +13,6 @@ function Homepage() {
   const getResumeData = async () => {
     const response = await axios.get('./ResumeData.json')
     setResumeData(response.data)
-    // console.log(response.data.main)
   }
 
   useEffect(() => {
@@ -23,7 +22,7 @@ function Homepage() {
   return (
     <div>
       <Navi />
-      <Header data={resumeData.main} />
+      <Header header={resumeData.main} />
       <About about={resumeData.main} />
       <Project />
       <Resume />

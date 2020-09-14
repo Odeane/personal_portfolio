@@ -1,14 +1,15 @@
 import React from 'react'
-import './About.style.scss'
+import './About.style.css'
 import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
 import BrightnessAutoIcon from '@material-ui/icons/BrightnessAuto';
 import BuildIcon from '@material-ui/icons/Build';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 
 function About({ about }) {
-  
+  let bio;
+
   if (about) {
-    var bio = about.bio
+    bio = about.bio
   }
 
   return (
@@ -17,12 +18,9 @@ function About({ about }) {
       <div className="decoyimg">
         Image Placeholder
         </div>
-
       <div className="bio">
         <p>{bio}</p>
-
         <p>Sed porttitor lectus nibh. Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. <br></br>
-
         </p>
       </div>
       <div className="skills">
@@ -47,7 +45,6 @@ function About({ about }) {
           </div>
         </div>
       </div>
-
     </div>
   )
 }

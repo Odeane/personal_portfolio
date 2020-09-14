@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import './nav.style.scss'
+import './nav.style.css'
 
 function Navi() {
   return (
