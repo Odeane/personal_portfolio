@@ -5,9 +5,11 @@
   height: 425px;
 }
 
+
+
 header {
   position: relative;
-  height: 720px;
+  height: 25rem;
   min-height: 500px;
   width: 100%;
   background: #161415 url(./images/computer17.jpg) no-repeat top center;

@@ -1,24 +1,63 @@
-import React from 'react'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
+import React, { useState, useEffect } from 'react'
 import './nav.style.css'
+import { Menu, Segment } from 'semantic-ui-react'
 
 function Navi() {
+
+  const [show, handleShow] = useState(false)
+
+  const [activeItem, setActiveItem] = useState('HOME')
+
+  const handleItemClick = (e, { name }) => setActiveItem(name)
+
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 80) {
+        handleShow(true);
+      } else handleShow(false);
+    })
+    return () => {
+      window.removeEventListener('scroll')
+    }
+  }, [])
+
+
+
   return (
-    <div className='heading'>
-      <Navbar className="navbar navbar-expand-lg navbar-dark fixed-top" >
-        <Navbar.Brand id='homecl' href="#home">HOME</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="justify-content-center">
-            <Nav.Link href="#about">ABOUT</Nav.Link>
-            <Nav.Link href="#projects">PROJECTS</Nav.Link>
-            <Nav.Link href="#resume">RESUME</Nav.Link>
-            <Nav.Link href="#contact">CONTACT</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+
+    <div className={`nav ${show && 'nav__black'}`}>
+      <Segment inverted>
+        <Menu inverted pointing secondary>
+          <Menu.Item
+            name='HOME'
+            active={activeItem === 'HOME'}
+            onClick={handleItemClick}
+          />
+          <Menu.Item
+            name='ABOUT'
+            active={activeItem === 'ABOUT'}
+            onClick={handleItemClick}
+          />
+          <Menu.Item
+            name='PROJECTS'
+            active={activeItem === 'PROJECTS'}
+            onClick={handleItemClick}
+          />
+          <Menu.Item
+            name='RESUME'
+            active={activeItem === 'RESUME'}
+            onClick={handleItemClick}
+          />
+          <Menu.Item
+            name='CONTACT'
+            active={activeItem === 'CONTACT'}
+            onClick={handleItemClick}
+          />
+        </Menu>
+      </Segment>
     </div>
+
   )
 }
 export default Navi;

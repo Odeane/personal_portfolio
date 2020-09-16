@@ -1,3 +1,22 @@
-#homecl{
-  color: rgb(44,76,117);
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px;
+  height: 50px;
+  z-index: 1;
+ 
+ 
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.Navbar{
+ color: rgb(26,57,111);
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__black {
+  background-color: rgb(23, 65, 121);
 }

@@ -19,7 +19,7 @@ function Header({ header }) {
   return (
     <div>
       <>
-        <div className="heads">
+        <div className="head">
           <header>
             <div className="row banner">
               <div className="banner-text">
@@ -38,9 +38,9 @@ function Header({ header }) {
           </header>
           <section>
           </section>
-          <div className="down-btn">
+         { /* <div className="down-btn">
             <a href='#project'><ArrowDropDownCircleIcon id='project-btn' /></a>
-          </div>
+  </div>*/}
         </div>
       </>
     </div>
