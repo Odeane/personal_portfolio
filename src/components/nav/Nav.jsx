@@ -28,28 +28,33 @@ function Navi() {
 
     <div className={`nav ${show && 'nav__black'}`}>
       <Segment inverted>
-        <Menu inverted pointing secondary>
+        <Menu inverted pointing>
           <Menu.Item
+            className='menu'
             name='HOME'
             active={activeItem === 'HOME'}
             onClick={handleItemClick}
           />
           <Menu.Item
+            className='menu'
             name='ABOUT'
             active={activeItem === 'ABOUT'}
             onClick={handleItemClick}
           />
           <Menu.Item
+            className='menu'
             name='PROJECTS'
             active={activeItem === 'PROJECTS'}
             onClick={handleItemClick}
           />
           <Menu.Item
+            className='menu'
             name='RESUME'
             active={activeItem === 'RESUME'}
             onClick={handleItemClick}
           />
           <Menu.Item
+            className='menu'
             name='CONTACT'
             active={activeItem === 'CONTACT'}
             onClick={handleItemClick}
