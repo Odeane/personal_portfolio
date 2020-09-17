@@ -4,15 +4,15 @@ describe('Portfolio interface', () => {
   })
   
   it('Page should successfully render a navbar', () => {
-    cy.get('.heading').should('contain', 'HOME');
-    cy.get('.heading').should('contain', 'ABOUT');
-    cy.get('.heading').should('contain', 'PROJECTS');
-    cy.get('.heading').should('contain', 'RESUME');
-    cy.get('.heading').should('contain', 'CONTACT'); 
+    cy.get('.menu').should('contain', 'HOME');
+    cy.get('.menu').should('contain', 'ABOUT');
+    cy.get('.menu').should('contain', 'PROJECTS');
+    cy.get('.menu').should('contain', 'RESUME');
+    cy.get('.menu').should('contain', 'CONTACT'); 
   })
 
   it('Page should successfully render a header', () => {
-    cy.get('h1').should('contain', "Hello, I'm Odeane Croney.")
+    cy.get('h1').should('contain', "Hi, I'm Odeane Croney.")
     cy.get('#occu').should('contain', "I'm a Full-Stack Web Developer based in Stockholm, Sweden.") 
   })
 
@@ -23,7 +23,15 @@ describe('Portfolio interface', () => {
   })
 
   it('Social links should be available', () => {
-    cy.get('a').click({multiple:true})
-    cy.url().should('eq', 'https://github.com/Odeane')
+    cy.get('a').children('i:first').should('exist')
   })
+
+  it('Page should sucessfuly render projects section', () => {
+    cy.get('.project__heading').should('contain', 'Projects')
+    cy.get('.project').should('contain', 'Bidspace')
+    
+    
+
+  });
 })
+

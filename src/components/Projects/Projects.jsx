@@ -20,12 +20,22 @@ const useStyles = makeStyles({
   },
 });
 
-function Projects() {
-
+function Projects({ projects }) {
+  
   const classes = useStyles();
 
-  return (
+  let name, details, image, link;
 
+  if (projects) {
+    console.log(projects.projects.Bidspace.image)
+    name = projects.projects.Bidspace.name
+    details = projects.projects.Bidspace.details
+    image = projects.projects.Bidspace.image
+    link = projects.projects.Bidspace.link
+  }
+  
+
+  return (
     <div className='project'>
       <h1 className="project__heading"> Projects</h1>
       <div >
@@ -33,26 +43,22 @@ function Projects() {
           <CardActionArea>
             <CardMedia
               className={classes.media}
-              image="/static/images/cards/contemplative-reptile.jpg"
+              image={image}
               title="Contemplative Reptile"
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
-                Lizard
+                {name}
           </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                across all continents except Antarctica
+                {details}
           </Typography>
             </CardContent>
           </CardActionArea>
           <CardActions>
             <Button size="small" color="primary">
-              Share
-        </Button>
-            <Button size="small" color="primary">
-              Learn More
-        </Button>
+              <a href={link}>View</a>
+        </Button>  
           </CardActions>
         </Card>
       </div>
