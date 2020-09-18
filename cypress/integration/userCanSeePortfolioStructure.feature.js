@@ -29,9 +29,8 @@ describe('Portfolio interface', () => {
   it('Page should sucessfuly render projects section', () => {
     cy.get('.project__heading').should('contain', 'Projects')
     cy.get('.project').should('contain', 'Bidspace')
-    
-    
-
+    cy.get('.project').should('contain', 'Rock Paper Scissors')
+    cy.get('.project').should('contain', 'News on Rails')
   });
 })
 

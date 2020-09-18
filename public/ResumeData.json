@@ -24,6 +24,18 @@
         "details" :"An appliction built using react and ruby on rails. The app is about providing a platform to people who is looking for a parking space to rent or trying to rent out their available parking space.",
         "image": "./images/bidspaceimg.jpg",
         "link": "https://bidspace.netlify.app/"
+      },
+      "RockPaperScissors": {
+        "name": "Rock Paper Scissors",
+        "details" :"An appliction built using react..............",
+        "image": ".......",
+        "link": "......."
+      },
+       "NewsOnRails": {
+        "name": "News on Rails",
+        "details" :"An appliction built using react..............",
+        "image": ".......",
+        "link": "......."
       }
     }
   }
