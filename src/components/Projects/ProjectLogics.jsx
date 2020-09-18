@@ -29,7 +29,6 @@ function ProjectLogics({ projects }) {
     link = projects.link
   }
 
-
   const classes = useStyles();
 
   return (
