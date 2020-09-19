@@ -32,5 +32,10 @@ describe('Portfolio interface', () => {
     cy.get('.project').should('contain', 'Rock Paper Scissors')
     cy.get('.project').should('contain', 'News on Rails')
   });
+
+  it('Page should sucessfuly render resume section', () => {
+    cy.get('.resume__heading').should('contain', 'Resume')
+  });
+
 })
 
