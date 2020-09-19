@@ -23,6 +23,7 @@ function ProjectLogics({ projects }) {
   let name, details, image, link
 
   if (projects) {
+    console.log(projects.image)
     name = projects.name
     details = projects.details
     image = projects.image
@@ -41,6 +42,7 @@ function ProjectLogics({ projects }) {
               image={image}
               title="Contemplative Reptile"
             />
+            
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
                 {name}

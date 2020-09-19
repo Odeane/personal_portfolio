@@ -4,4 +4,11 @@
 
 .project{
 background-color: rgba(40, 58, 67, 0.061);
+width: 100%;
+}
+
+.projects{
+display: flex;
+align-items: center;
+justify-content: center;
 }

@@ -5,6 +5,7 @@ import BrightnessAutoIcon from '@material-ui/icons/BrightnessAuto';
 import BuildIcon from '@material-ui/icons/Build';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 
+
 function About({ about }) {
   let bio;
 
