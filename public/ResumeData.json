@@ -38,6 +38,16 @@
         "image": "/images/newsonrails.jpg",
         "link": "https://news-on-rails.netlify.app/"
       }
+    },
+    "education":{
+      "CraftAcademy ":{
+        "name": "Craft Academy Coding Bootcamp",
+        "period": "05/2020 – 09/2020"
+      },
+      "university":{
+        "name": "University of Technology Jamaica",
+        "period": "08/2015-05/2018"
+      }
     }
   }
 }

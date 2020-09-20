@@ -25,7 +25,7 @@ function Resume() {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
-              <Typography>Eat</Typography>
+              <Typography>Craft Academy</Typography>
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
@@ -61,7 +61,7 @@ function Resume() {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
-              <Typography>Craft Academy</Typography>
+              <Typography>St Catherine High School</Typography>
             </TimelineContent>
           </TimelineItem>
         </Timeline>
