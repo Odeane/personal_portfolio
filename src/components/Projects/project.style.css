@@ -3,12 +3,15 @@
 }
 
 .project{
-background-color: rgba(40, 58, 67, 0.061);
+padding-top: 2rem;
+background-color: rgba(172,171,169, 0.2);
 width: 100%;
 }
 
 .projects{
-display: flex;
-align-items: center;
-justify-content: center;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 3rem;
 }

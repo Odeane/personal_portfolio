@@ -4,20 +4,22 @@ import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
 import BrightnessAutoIcon from '@material-ui/icons/BrightnessAuto';
 import BuildIcon from '@material-ui/icons/Build';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
+import { Image  } from 'semantic-ui-react'
 
 
 function About({ about }) {
-  let bio;
+  let bio, avatar;
 
   if (about) {
     bio = about.bio
+    avatar= about.avatar
   }
 
   return (
     <div id='about'>
       <h1 id='about-head'>About</h1>
-      <div className="decoyimg">
-        Image Placeholder
+      <div>
+        <Image id='avatar' src={avatar} rounded />
         </div>
       <div className="bio">
         <p>{bio}</p>

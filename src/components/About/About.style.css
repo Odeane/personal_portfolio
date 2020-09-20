@@ -1,19 +1,19 @@
 #about{
   margin: 80px 80px 0px 80px ;
+  min-height: 40rem;
+
 }
 .bio{
   max-width: 50%;
 }
 
-.decoyimg{
-  background-color:  black;
-  color: white;
-  text-align: center;
-  height: 400px;
-  width: 500px;
-  float: right;
-}
 
+#avatar{
+  position: relative;
+  float: right;
+  max-height: 40rem;
+  max-width: 30rem;
+}
 
 .softIcons{
   max-width: 50%;
