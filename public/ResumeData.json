@@ -11,7 +11,7 @@
       "zip": "12431"
     },
     "image": "/Users/odeanecroney/Documents/craft_academy/personal_portfolio/src/components/About/images/avatar.jpeg",
-    "bio": "Pellentesque in ipsum id orci porta dapibus.Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Donec sollicitudin molestie malesuada. ",
+    "bio": "I am an ambitious software developer filled with excitement, dedication and passion for the craft. I am open-minded and eager to learn new things. I am a great team player with the ability to also work independently. I am seeking the opportunity to work in an enthusing, diverse and challenging work environment.",
     "avatar":"/images/odeane2.jpg",
     "social": {
       "instagram": "https://www.instagram.com/king_croney/",
@@ -42,11 +42,31 @@
     "education":{
       "CraftAcademy ":{
         "name": "Craft Academy Coding Bootcamp",
-        "period": "05/2020 – 09/2020"
+        "period": "05/2020 – 09/2020",
+        "info": "An accelerated learning bootcamp. The curriculum consisted of build complex real-world applications and teaching the students the skills they need to go off and work in the real world."
       },
       "university":{
         "name": "University of Technology Jamaica",
-        "period": "08/2015-05/2018"
+        "period": "08/2015-05/2018",
+        "info":"Faculty of Natural & Applied Science. Studied Forensic Chemistry"
+      }
+    },
+    "skills":{
+      "programming":{
+        "title": "Programming",
+        "info": "The abiltiy to solve problems and build scalable applications. I am also capable of pair programming which I enjoy doing very much."
+      },
+      "agile":{
+        "title": "Agile software development",
+        "info": "I attained experience participating in daily scrums, being a scrum master and developing application following the agile manifesto principles."
+      },
+      "tests":{
+        "title":"Test driven development",
+        "info": "I have gain tremendous experience in writing unit and feature tests for all the real world applications built during the bootcamp."
+      },
+      "versioncontrol":{
+        "title": "Version control",
+        "info": "I have experience in using git and github. I use github and git when pair programming and personally to track changes in my sorce code during development."
       }
     }
   }

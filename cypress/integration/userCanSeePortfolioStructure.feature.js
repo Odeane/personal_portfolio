@@ -18,8 +18,14 @@ describe('Portfolio interface', () => {
 
   it('Page should successfully render about section', () => {
     cy.get('#about-head').should('contain', 'About');
-    cy.get('p').should('contain', 'Pellentesque in ipsum id orci porta dapibus.Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.');
-    // cy.get('img').should('be.visible')
+    cy.get('p').should('contain', 'I am an ambitious software developer filled with excitement, dedication and passion for the craft. I am open-minded and eager to learn new things. I am a great team player with the ability to also work independently. I am seeking the opportunity to work in an enthusing, diverse and challenging work environment.');
+    cy.get('#avatar').should('be.visible')
+    cy.get('.softIcons').within(() => {
+      cy.get('.skillFont').should('contain', 'Programming')
+      cy.get('.skillFont').should('contain', 'Agile software development')
+      cy.get('.skillFont').should('contain', 'Test driven development')
+      cy.get('.skillFont').should('contain', 'Version control')
+    })
   })
 
   it('Social links should be available', () => {

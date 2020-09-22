@@ -7,13 +7,56 @@ import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import { Image  } from 'semantic-ui-react'
 
 
+
 function About({ about }) {
-  let bio, avatar;
+  let bio,
+    avatar,
+    programmingtitle,
+    programmingInfo,
+    agile, agileInfo,
+    testsInfo,
+    tests,
+    version,
+    versionInfo;
 
   if (about) {
     bio = about.bio
-    avatar= about.avatar
+    avatar = about.avatar
+    programmingtitle = about.skills.programming.title
+    programmingInfo = about.skills.programming.info
+    agile = about.skills.agile.title
+    agileInfo = about.skills.agile.info
+    tests = about.skills.tests.title
+    testsInfo = about.skills.tests.info
+    version = about.skills.versioncontrol.title
+    versionInfo = about.skills.versioncontrol.info
+
   }
+
+  let aboutData = (
+    <div className="softIcons">
+      <div className="softIcon">
+        <FitnessCenterIcon />
+        <h6 className='skillFont'>{programmingtitle}</h6>
+        <p>{programmingInfo}</p>
+      </div>
+      <div className="softIcon">
+        <BrightnessAutoIcon />
+        <h6 className='skillFont'>{agile}</h6>
+        <p>{agileInfo}</p>
+      </div>
+      <div className="softIcon">
+        <BuildIcon />
+        <h6 className='skillFont'>{tests}</h6>
+        <p>{testsInfo}</p>
+      </div>
+      <div className="softIcon">
+        <EmojiPeopleIcon />
+        <h6 className='skillFont'>{version}</h6>
+        <p>{versionInfo}</p>
+      </div>
+    </div>
+  ) 
 
   return (
     <div id='about'>
@@ -23,30 +66,10 @@ function About({ about }) {
         </div>
       <div className="bio">
         <p>{bio}</p>
-        <p>Sed porttitor lectus nibh. Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. <br></br>
-        </p>
       </div>
       <div className="skills">
         <h3>Soft Skills</h3>
-
-        <div className="softIcons">
-          <div className="softIcon">
-            <FitnessCenterIcon />
-            <h6 className='skillFont'>Strength</h6>
-          </div>
-          <div className="softIcon">
-            <BrightnessAutoIcon />
-            <h6 className='skillFont'>Agile</h6>
-          </div>
-          <div className="softIcon">
-            <BuildIcon />
-            <h6 className='skillFont'>Test Driven</h6>
-          </div>
-          <div className="softIcon">
-            <EmojiPeopleIcon />
-            <h6 className='skillFont'>Motivated</h6>
-          </div>
-        </div>
+        {aboutData} 
       </div>
     </div>
   )
