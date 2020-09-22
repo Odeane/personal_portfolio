@@ -68,7 +68,7 @@ function About({ about }) {
         <p>{bio}</p>
       </div>
       <div className="skills">
-        <h3>Soft Skills</h3>
+        <h3>Skills and abilities</h3>
         {aboutData} 
       </div>
     </div>

@@ -41,6 +41,14 @@ describe('Portfolio interface', () => {
 
   it('Page should sucessfuly render resume section', () => {
     cy.get('.resume__heading').should('contain', 'Resume')
+    cy.get('.education__history').within(() => {
+      cy.get('.school').should('contain', "Craft Academy Coding Bootcamp")
+      cy.get('.school').should('contain', "University of Technology, Jamaica")
+      cy.get('.school').should('contain', "Portmore Community College")
+      cy.get('.school').should('contain', "St Catherine High School")
+      cy.get('.period').should('contain', "05/2020 - 09/2020")
+      cy.get('.period').should('contain', "08/2015 - 05/2018")
+    })
   });
 
 })

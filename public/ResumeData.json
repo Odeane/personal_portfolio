@@ -40,15 +40,24 @@
       }
     },
     "education":{
-      "CraftAcademy ":{
+      "CraftAcademy":{
         "name": "Craft Academy Coding Bootcamp",
-        "period": "05/2020 – 09/2020",
+        "period": "05/2020 - 09/2020",
         "info": "An accelerated learning bootcamp. The curriculum consisted of build complex real-world applications and teaching the students the skills they need to go off and work in the real world."
       },
       "university":{
-        "name": "University of Technology Jamaica",
-        "period": "08/2015-05/2018",
+        "name": "University of Technology, Jamaica",
+        "period": "08/2015 - 05/2018",
         "info":"Faculty of Natural & Applied Science. Studied Forensic Chemistry"
+      },
+      "PortmoreCommunityCollege":{
+        "name": "Portmore Community College",
+        "period": "9/2013 - 06/2015",
+        "info": "Applied Science"
+      },
+      "highSchool":{
+        "name":"St Catherine High School",
+        "period": "09/2007 - 06/2012"
       }
     },
     "skills":{

@@ -25,7 +25,7 @@ function Homepage() {
       <Header header={resumeData.main} />
       <About about={resumeData.main} />
       <Project data={resumeData.main}/>
-      <Resume />
+      <Resume cv={resumeData.main}/>
     </div>
   )
 }
