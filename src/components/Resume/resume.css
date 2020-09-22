@@ -1,0 +1,14 @@
+#heading__text{
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 1%;
+}
+
+.save__cv{
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+#save__icon{
+  color: rgb(26,57,110);
+}

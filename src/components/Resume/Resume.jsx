@@ -7,6 +7,8 @@ import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import Typography from '@material-ui/core/Typography';
+import SaveIcon from '@material-ui/icons/Save';
+import "./resume.css"
 
 
 
@@ -24,8 +26,7 @@ function Resume({ cv }) {
     collegeInfo,
     collegePeriod;
   
-  if (cv) {
-    console.log(cv.education.highSchool.name)
+  if (cv) { 
     craftAcademyName = cv.education.CraftAcademy.name
     craftAcademyPeriod = cv.education.CraftAcademy.period
     craftAcademyInfo = cv.education.CraftAcademy.info
@@ -41,7 +42,11 @@ function Resume({ cv }) {
 
   return (
     <div className='resume__heading'>
-      <h1 className='header__text'>Resume</h1>
+      <h1 id='heading__text'>Resume</h1>
+      <div className="save__cv">
+        <SaveIcon id='save__icon' fontSize="large"/>
+        <p>Download CV</p>
+      </div>
       <div className="education__history">
         <React.Fragment>
           <Timeline align="alternate">
