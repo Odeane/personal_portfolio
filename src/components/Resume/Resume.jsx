@@ -7,10 +7,9 @@ import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import Typography from '@material-ui/core/Typography';
-import SaveIcon from '@material-ui/icons/Save';
+import GetAppIcon from '@material-ui/icons/GetApp';
 import "./resume.css"
-
-
+import IconButton from '@material-ui/core/IconButton';
 
 function Resume({ cv }) {
 
@@ -25,8 +24,8 @@ function Resume({ cv }) {
     collegeName,
     collegeInfo,
     collegePeriod;
-  
-  if (cv) { 
+
+  if (cv) {
     craftAcademyName = cv.education.CraftAcademy.name
     craftAcademyPeriod = cv.education.CraftAcademy.period
     craftAcademyInfo = cv.education.CraftAcademy.info
@@ -40,13 +39,17 @@ function Resume({ cv }) {
     highSchoolPeriod = cv.education.highSchool.period
   }
 
+
   return (
     <div className='resume__heading'>
-      <h1 id='heading__text'>Resume</h1>
+      <h1 id='heading__text'>RESUME</h1>
       <div className="save__cv">
-        <SaveIcon id='save__icon' fontSize="large"/>
         <p>Download CV</p>
+        <IconButton color="primary" >
+          <GetAppIcon id='save__icon' fontSize="large" />
+        </IconButton>
       </div>
+
       <div className="education__history">
         <React.Fragment>
           <Timeline align="alternate">
@@ -70,7 +73,7 @@ function Resume({ cv }) {
             <TimelineItem>
               <TimelineOppositeContent>
                 <div className="period">
-                <Typography color="textSecondary">{universityPeriod}</Typography>
+                  <Typography color="textSecondary">{universityPeriod}</Typography>
                 </div>
               </TimelineOppositeContent>
               <TimelineSeparator>
@@ -94,7 +97,7 @@ function Resume({ cv }) {
               </TimelineSeparator>
               <TimelineContent>
                 <div className="school">
-                <Typography>{collegeName}</Typography>
+                  <Typography>{collegeName}</Typography>
                 </div>
                 <p>{collegeInfo}</p>
               </TimelineContent>
@@ -109,7 +112,7 @@ function Resume({ cv }) {
               </TimelineSeparator>
               <TimelineContent>
                 <div className="school">
-                <Typography>{highSchoolName}</Typography>
+                  <Typography>{highSchoolName}</Typography>
                 </div>
               </TimelineContent>
             </TimelineItem>

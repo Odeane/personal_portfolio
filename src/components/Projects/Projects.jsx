@@ -15,7 +15,7 @@ function Projects({ data }) {
 
   return (
     <div className="project" >
-    <h1 className="project__heading"> Projects</h1>
+    <h1 className="project__heading">PROJECTS</h1>
     <div className="projects">
         <ProjectLogics projects={bidspace} />
         <ProjectLogics projects={rockpaperscissors} />

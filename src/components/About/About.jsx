@@ -60,7 +60,7 @@ function About({ about }) {
 
   return (
     <div id='about'>
-      <h1 id='about-head'>About</h1>
+      <h1 id='about-head'>ABOUT</h1>
       <div>
         <Image id='avatar' src={avatar} rounded />
         </div>

@@ -5,6 +5,7 @@ import axios from 'axios'
 import About from '../components/About/About';
 import Resume from '../components/Resume/Resume';
 import Project from '../components/Projects/Projects'
+import Contact from '../components/Footer/Contact';
 
 function Homepage() {
 
@@ -25,7 +26,8 @@ function Homepage() {
       <Header header={resumeData.main} />
       <About about={resumeData.main} />
       <Project data={resumeData.main}/>
-      <Resume cv={resumeData.main}/>
+      <Resume cv={resumeData.main} />
+      <Contact contact={resumeData.main}/>
     </div>
   )
 }

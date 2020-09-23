@@ -17,7 +17,7 @@ describe('Portfolio interface', () => {
   })
 
   it('Page should successfully render about section', () => {
-    cy.get('#about-head').should('contain', 'About');
+    cy.get('#about-head').should('contain', 'ABOUT');
     cy.get('p').should('contain', 'I am an ambitious software developer filled with excitement, dedication and passion for the craft. I am open-minded and eager to learn new things. I am a great team player with the ability to also work independently. I am seeking the opportunity to work in an enthusing, diverse and challenging work environment.');
     cy.get('#avatar').should('be.visible')
     cy.get('.softIcons').within(() => {
@@ -33,14 +33,14 @@ describe('Portfolio interface', () => {
   })
 
   it('Page should sucessfuly render projects section', () => {
-    cy.get('.project__heading').should('contain', 'Projects')
+    cy.get('.project__heading').should('contain', 'PROJECTS')
     cy.get('.project').should('contain', 'Bidspace')
     cy.get('.project').should('contain', 'Rock Paper Scissors')
     cy.get('.project').should('contain', 'News on Rails')
   });
 
   it('Page should sucessfuly render resume section', () => {
-    cy.get('.resume__heading').should('contain', 'Resume')
+    cy.get('.resume__heading').should('contain', 'RESUME')
     cy.get('.education__history').within(() => {
       cy.get('.school').should('contain', "Craft Academy Coding Bootcamp")
       cy.get('.school').should('contain', "University of Technology, Jamaica")
@@ -51,5 +51,13 @@ describe('Portfolio interface', () => {
     })
   });
 
+  it('User can contact section', () => {
+    cy.get('.contact__heading').should('contain', 'CONTACT')
+    cy.get('.contact__details').within(() => {
+      cy.get('.email').should('contain', 'croneyodeane@gmail.com')
+      cy.get('.phone').should('contain', "+46 76-264 03 66")
+      cy.get('.address').should('contain', 'Stockholm')
+    })
+  });
 })
 
