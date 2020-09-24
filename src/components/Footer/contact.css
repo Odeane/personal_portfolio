@@ -10,7 +10,7 @@
   filter: blur(0.9px);
 }
 
-.contact__details{
+#contact__details{
   color: black;
   background-color: rgb(249,249,249);
   height: 20rem;

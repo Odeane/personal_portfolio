@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import './nav.style.css'
-import { Menu, Segment } from 'semantic-ui-react'
+import { Link, animateScroll as scroll} from 'react-scroll'
+
+
 
 function Navi() {
 
   const [show, handleShow] = useState(false)
-
-  const [activeItem, setActiveItem] = useState('HOME')
-
-  const handleItemClick = (e, { name }) => setActiveItem(name)
-
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -27,40 +24,25 @@ function Navi() {
   return (
 
     <div className={`nav ${show && 'nav__black'}`}>
-      <Segment inverted>
-        <Menu inverted pointing>
-          <Menu.Item
-            className='menu'
-            name='HOME'
-            active={activeItem === 'HOME'}
-            onClick={handleItemClick}
-          />
-          <Menu.Item
-            className='menu'
-            name='ABOUT'
-            active={activeItem === 'ABOUT'}
-            onClick={handleItemClick}
-          />
-          <Menu.Item
-            className='menu'
-            name='PROJECTS'
-            active={activeItem === 'PROJECTS'}
-            onClick={handleItemClick}
-          />
-          <Menu.Item
-            className='menu'
-            name='RESUME'
-            active={activeItem === 'RESUME'}
-            onClick={handleItemClick}
-          />
-          <Menu.Item
-            className='menu'
-            name='CONTACT'
-            active={activeItem === 'CONTACT'}
-            onClick={handleItemClick}
-          />
-        </Menu>
-      </Segment>
+      
+      <div className="menu">
+      <Link smooth={true} duration={1000} onClick={()=> scroll.scrollToTop() }>HOME</Link>
+      </div>
+      <div className="menu">
+      <Link smooth={true} duration={1000} to={'about'}>ABOUT</Link>
+      </div>
+      <div className="menu">
+      <Link smooth={true} duration={1000} to={'project'}>PROJECTS</Link>
+      </div>
+      <div className="menu">
+      <Link smooth={true} duration={1000} to={'heading__text'}>RESUME</Link>
+      </div>
+      <div className="menu">
+      <Link smooth={true} duration={1000} to={'contact__details'}>CONTACT</Link>
+      </div>
+
+
+
     </div>
 
   )

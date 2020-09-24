@@ -14,7 +14,7 @@ function Projects({ data }) {
   }
 
   return (
-    <div className="project" >
+    <div id="project" >
     <h1 className="project__heading">PROJECTS</h1>
     <div className="projects">
         <ProjectLogics projects={bidspace} />

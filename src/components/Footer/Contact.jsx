@@ -29,7 +29,7 @@ function Contact({ contact }) {
   return (
     <div className='footer' >
       <div className="footer__image" />
-      <div className='contact__details'>
+      <div id='contact__details'>
         <div className="contact">
           <LocationOnIcon />
           <h4>Address</h4>

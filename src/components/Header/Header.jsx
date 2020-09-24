@@ -38,9 +38,6 @@ function Header({ header }) {
           </header>
           <section>
           </section>
-         { /* <div className="down-btn">
-            <a href='#project'><ArrowDropDownCircleIcon id='project-btn' /></a>
-  </div>*/}
         </div>
       </>
     </div>
