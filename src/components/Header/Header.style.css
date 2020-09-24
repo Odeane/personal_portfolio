@@ -62,12 +62,17 @@ header .banner-text hr {
   border-color: rgba(150, 150, 150, 0.1);
 }
 
-.social a{
-  color: rgb(224,224,224);
+.social{
+  color: white;
   font-size: 30px;
   padding-right: 13px;
   text-decoration: none;
-  
+  letter-spacing: 14px;
+}
+
+i:hover{
+  color: rgb(97, 146, 201);
+  cursor:pointer;
 }
 
 #occu {

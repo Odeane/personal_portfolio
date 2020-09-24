@@ -27,5 +27,5 @@
 
 .menu:hover{
   color: rgb(97, 126, 160);
- cursor:default;
+  cursor:pointer;
 }
