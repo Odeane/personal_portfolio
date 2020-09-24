@@ -24,9 +24,13 @@
 .softIcon{
   color: rgb(26,57,111);
   text-decoration: none;
+  padding-right: 23px;
 }
 
 .skillFont{
   color: black;
-  
+}
+
+.skills{
+  padding-top: 5%;
 }
