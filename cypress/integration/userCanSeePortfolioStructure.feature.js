@@ -34,9 +34,9 @@ describe('Portfolio interface', () => {
 
   it('Page should sucessfuly render projects section', () => {
     cy.get('.project__heading').should('contain', 'PROJECTS')
-    cy.get('.project').should('contain', 'Bidspace')
-    cy.get('.project').should('contain', 'Rock Paper Scissors')
-    cy.get('.project').should('contain', 'News on Rails')
+    cy.get('#project').should('contain', 'Bidspace')
+    cy.get('#project').should('contain', 'Rock Paper Scissors')
+    cy.get('#project').should('contain', 'News on Rails')
   });
 
   it('Page should sucessfuly render resume section', () => {
@@ -52,7 +52,7 @@ describe('Portfolio interface', () => {
   });
 
   it('User can contact section', () => {
-    cy.get('.contact__details').within(() => {
+    cy.get('#contact__details').within(() => {
       cy.get('.contact').should('contain', 'croneyodeane@gmail.com')
       cy.get('.contact').should('contain', "+46 76-264 03 66")
       cy.get('.contact').should('contain', 'Stockholm')
