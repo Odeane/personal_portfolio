@@ -52,11 +52,10 @@ describe('Portfolio interface', () => {
   });
 
   it('User can contact section', () => {
-    cy.get('.contact__heading').should('contain', 'CONTACT')
     cy.get('.contact__details').within(() => {
-      cy.get('.email').should('contain', 'croneyodeane@gmail.com')
-      cy.get('.phone').should('contain', "+46 76-264 03 66")
-      cy.get('.address').should('contain', 'Stockholm')
+      cy.get('.contact').should('contain', 'croneyodeane@gmail.com')
+      cy.get('.contact').should('contain', "+46 76-264 03 66")
+      cy.get('.contact').should('contain', 'Stockholm')
     })
   });
 })

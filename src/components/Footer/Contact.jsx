@@ -30,26 +30,31 @@ function Contact({ contact }) {
     <div className='footer' >
       <div className="footer__image" />
       <div className='contact__details'>
-        <h1 className='contact__heading'>CONTACT</h1>
-        <div className="address">
+        <div className="contact">
           <LocationOnIcon />
           <h4>Address</h4>
           <p>{street}</p>
           <p>{zip} {city}</p>
           <p>{state}</p>
         </div>
-        <div className="email">
+        <div className="contact">
           <MailOutlineIcon />
           <h4>E-mail</h4>
           <p>{email}</p>
         </div>
-        <div className="phone">
+        <div className="contact">
           <PhoneInTalkIcon />
           <p>{phone}</p>
         </div>
+        <div>
+        <a href=''> <i className="fa fa-github" aria-hidden="true"></i></a>
+        <a href=''> <i className="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href=''> <i className="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href={'placeholder'}> <i className="fa fa-facebook" aria-hidden="true"></i></a>
+        </div>
       </div>
-    </div>
 
+    </div>
   )
 }
 
