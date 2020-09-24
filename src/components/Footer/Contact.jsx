@@ -47,9 +47,9 @@ function Contact({ contact }) {
           <p>{phone}</p>
         </div>
         <div>
-        <a href=''> <i className="fa fa-github" aria-hidden="true"></i></a>
-        <a href=''> <i className="fa fa-linkedin" aria-hidden="true"></i></a>
-          <a href=''> <i className="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href='/home'> <i className="fa fa-github" aria-hidden="true"></i></a>
+        <a href='home'> <i className="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href='home'> <i className="fa fa-instagram" aria-hidden="true"></i></a>
           <a href={'placeholder'}> <i className="fa fa-facebook" aria-hidden="true"></i></a>
         </div>
       </div>
