@@ -32,19 +32,20 @@ function ProjectLogics({ projects }) {
 
   const classes = useStyles();
 
+
+  
   return (
     <div>
       <div >
         <Card className={classes.root}>
-          <CardActionArea>
+          <CardActionArea onClick={()=>window.open(link)}  >
             <CardMedia
               className={classes.media}
               image={image}
-              title="Contemplative Reptile"
+              title="Contemplative Reptile" 
             />
-            
             <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
+              <Typography  gutterBottom variant="h5" component="h2">
                 {name}
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
@@ -53,8 +54,8 @@ function ProjectLogics({ projects }) {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size="small" color="primary">
-              <a href={link}>View</a>
+            <Button onClick={() => window.open(link)} variant="outlined" size="small" color="primary">
+              View more
             </Button>
           </CardActions>
         </Card>
