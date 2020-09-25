@@ -3,7 +3,7 @@ import './About.style.css'
 import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
 import BrightnessAutoIcon from '@material-ui/icons/BrightnessAuto';
 import BuildIcon from '@material-ui/icons/Build';
-import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
+import DescriptionIcon from '@material-ui/icons/Description';
 import { Image  } from 'semantic-ui-react'
 
 
@@ -38,22 +38,22 @@ function About({ about }) {
       <div className="softIcon">
         <FitnessCenterIcon />
         <h6 className='skillFont'>{programmingtitle}</h6>
-        <p>{programmingInfo}</p>
+        <p className='info'>{programmingInfo}</p>
       </div>
       <div className="softIcon">
         <BrightnessAutoIcon />
         <h6 className='skillFont'>{agile}</h6>
-        <p>{agileInfo}</p>
+        <p className='info'>{agileInfo}</p>
       </div>
       <div className="softIcon">
-        <BuildIcon />
+      <BuildIcon />
         <h6 className='skillFont'>{tests}</h6>
-        <p>{testsInfo}</p>
+        <p className='info'>{testsInfo}</p>
       </div>
       <div className="softIcon">
-        <EmojiPeopleIcon />
+        <DescriptionIcon />
         <h6 className='skillFont'>{version}</h6>
-        <p>{versionInfo}</p>
+        <p className='info'>{versionInfo}</p>
       </div>
     </div>
   ) 
@@ -68,7 +68,8 @@ function About({ about }) {
         <p>{bio}</p>
       </div>
       <div className="skills">
-        <h3>Skills</h3>
+        <h3>SKILLS</h3>
+        <br/>
         {aboutData} 
       </div>
     </div>
