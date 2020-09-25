@@ -11,7 +11,10 @@ function Contact({ contact }) {
     state,
     zip,
     email,
-    phone;
+    phone,
+    instagram,
+    linkedin,
+    github;
 
 
   if (contact) {
@@ -22,6 +25,9 @@ function Contact({ contact }) {
     zip = contact.address.zip
     email = contact.email
     phone = contact.phone
+    instagram = contact.social.instagram
+    linkedin = contact.social.linkedin
+    github = contact.social.github
   }
 
 
@@ -31,26 +37,31 @@ function Contact({ contact }) {
       <div className="footer__image" />
       <div id='contact__details'>
         <div className="contact">
+          <div className="footer__icons">
           <LocationOnIcon />
           <h4>Address</h4>
-          <p>{street}</p>
-          <p>{zip} {city}</p>
-          <p>{state}</p>
+          </div>
+          <p>{street} <br />{zip} <br />{city} <br />{state}</p>
         </div>
         <div className="contact">
-          <MailOutlineIcon />
-          <h4>E-mail</h4>
+        <div className="footer__icons">
+            <MailOutlineIcon />
+            <h4>E-mail</h4>
+          </div> 
           <p>{email}</p>
         </div>
         <div className="contact">
+          <div className="footer__icons">
           <PhoneInTalkIcon />
+          <h4>Phone</h4>
+          </div>
           <p>{phone}</p>
         </div>
-        <div>
-        <a href='/home'> <i className="fa fa-github" aria-hidden="true"></i></a>
-        <a href='home'> <i className="fa fa-linkedin" aria-hidden="true"></i></a>
-          <a href='home'> <i className="fa fa-instagram" aria-hidden="true"></i></a>
-          <a href={'placeholder'}> <i className="fa fa-facebook" aria-hidden="true"></i></a>
+        <div className="social">
+          <i id='github__icon' onClick={() => window.open(github)} className="fa fa-github" aria-hidden="true" />
+          <i id='linkedin__icon' onClick={() => window.open(linkedin)} className="fa fa-linkedin" aria-hidden="true" />
+          <i id='instagram__icon' onClick={() => window.open(instagram)} className="fa fa-instagram" aria-hidden="true" />
+          <i id='facebook__icon' onClick={() => window.open(instagram)} className="fa fa-facebook" aria-hidden="true" />
         </div>
       </div>
 

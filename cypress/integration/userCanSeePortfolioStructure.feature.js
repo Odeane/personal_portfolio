@@ -29,7 +29,7 @@ describe('Portfolio interface', () => {
   })
 
   it('Social links should be available', () => {
-    cy.get('a').children('i:first').should('exist')
+    cy.get('i').should('exist')
   })
 
   it('Page should sucessfuly render projects section', () => {
