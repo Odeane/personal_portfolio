@@ -23,7 +23,8 @@ function Resume({ cv }) {
     highSchoolPeriod,
     collegeName,
     collegeInfo,
-    collegePeriod;
+    collegePeriod,
+    highSchoolInfo;
 
   if (cv) {
     craftAcademyName = cv.education.CraftAcademy.name
@@ -37,6 +38,7 @@ function Resume({ cv }) {
     collegePeriod = cv.education.PortmoreCommunityCollege.period
     highSchoolName = cv.education.highSchool.name
     highSchoolPeriod = cv.education.highSchool.period
+    highSchoolInfo = cv.education.highSchool.info
   }
 
 
@@ -114,6 +116,7 @@ function Resume({ cv }) {
                 <div className="school">
                   <Typography>{highSchoolName}</Typography>
                 </div>
+                <p>{highSchoolInfo}</p>
               </TimelineContent>
             </TimelineItem>
           </Timeline>

@@ -11,7 +11,7 @@
       "zip": "12431"
     },
     "image": "/Users/odeanecroney/Documents/craft_academy/personal_portfolio/src/components/About/images/avatar.jpeg",
-    "bio": "I am an ambitious software developer filled with excitement, dedication and passion for the craft. I am open-minded and eager to learn new things. I am a great team player with the ability to also work independently. I am seeking the opportunity to work in an enthusing, diverse and challenging work environment.",
+    "bio": "I am an ambitious software developer filled with excitement, dedication and passion for the craft. I am a great team player with the ability to also work independently. I am open-minded and eager to learn new things. If i do not know something, I will learn it. I am a fast learner and I take pride in learning from my mistakes.",
     "avatar":"/images/odeane2.jpg",
     "social": {
       "instagram": "https://www.instagram.com/king_croney/",
@@ -22,19 +22,19 @@
     "projects":{
       "Bidspace": {
         "name": "Bidspace",
-        "details" :"An appliction built using react and ruby on rails. The app is about providing a platform to people who is looking for a parking space to rent or trying to rent out their available parking space.",
+        "details" :"An application built using react and ruby on rails. The app is about providing a platform to people looking for a parking space to rent or trying to rent out their available parking space.",
         "image": "/images/bidspaseimg.jpg",
         "link": "https://bidspace.netlify.app/"
       },
       "RockPaperScissors": {
         "name": "Rock Paper Scissors",
-        "details" :"An appliction built using react and ruby on rails. The app is about providing a platform to people who is looking for a parking space to rent or trying to rent out their available parking space",
+        "details" :"An application built using react. The application was a tech interview simulation coding challenge given by Craft Academy to assess my coding, problem solving, and researching skills.",
         "image": "/images/rps.jpg",
         "link": "https://odeanerockpaperscissors.netlify.app/"
       },
        "NewsOnRails": {
         "name": "News on Rails",
-        "details" :"An appliction built using react and ruby on rails. The app is about providing a platform to people who is looking for a parking space to rent or trying to rent out their available parking space",
+        "details" :"An application built using react and ruby on rails. This is a news paper app that allows visitors to read articles. It also features an admin side for journalists to publish articles. ",
         "image": "/images/newsonrails.jpg",
         "link": "https://news-on-rails.netlify.app/"
       }
@@ -43,12 +43,12 @@
       "CraftAcademy":{
         "name": "Craft Academy Coding Bootcamp",
         "period": "05/2020 - 09/2020",
-        "info": "An accelerated learning bootcamp. The curriculum consisted of build complex real-world applications and teaching the students the skills they need to go off and work in the real world."
+        "info": "An accelerated learning bootcamp. The curriculum consists of building complex real-world applications following agile methodologies and learning soft skills."
       },
       "university":{
         "name": "University of Technology, Jamaica",
         "period": "08/2015 - 05/2018",
-        "info":"Faculty of Natural & Applied Science. Studied Forensic Chemistry"
+        "info":"Bachelor of Science in Forensic Chemistry."
       },
       "PortmoreCommunityCollege":{
         "name": "Portmore Community College",
@@ -57,7 +57,8 @@
       },
       "highSchool":{
         "name":"St Catherine High School",
-        "period": "09/2007 - 06/2012"
+        "period": "09/2007 - 06/2012",
+        "info": "Secondary Education Certificate"
       }
     },
     "skills":{

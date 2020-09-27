@@ -18,7 +18,7 @@ describe('Portfolio interface', () => {
 
   it('Page should successfully render about section', () => {
     cy.get('#about-head').should('contain', 'ABOUT');
-    cy.get('p').should('contain', 'I am an ambitious software developer filled with excitement, dedication and passion for the craft. I am open-minded and eager to learn new things. I am a great team player with the ability to also work independently. I am seeking the opportunity to work in an enthusing, diverse and challenging work environment.');
+    cy.get('p').should('contain', 'I am an ambitious software developer filled with excitement, dedication and passion for the craft. I am a great team player with the ability to also work independently. I am open-minded and eager to learn new things. If i do not know something, I will learn it. I am a fast learner and I take pride in learning from my mistakes.');
     cy.get('#avatar').should('be.visible')
     cy.get('.softIcons').within(() => {
       cy.get('.skillFont').should('contain', 'Programming')
