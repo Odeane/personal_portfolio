@@ -1,47 +1,53 @@
-#about{
-  margin: 80px 80px 0px 80px ;
-  min-height: 40rem;
-
+#about {
+  margin: 80px 80px 0px 80px;
+  /* min-height: 40rem; */
 }
-.bio{
+
+/* .bio{
   max-width: 50%;
+} */
+
+.avatar__bio {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-
-#avatar{
-  position: relative;
-  float: right;
-  max-height: 40rem;
-  max-width: 30rem;
+#avatar__head {
+  max-height: 400px;
+  min-width: 100px;
 }
 
-.softIcons{
-  max-width: 50%;
+#avatar {
+  max-height: 400px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.softIcons {
+  /* max-width: 50%; */
   display: flex;
   justify-content: space-between;
-  position: relative;
 }
 
-.softIcon{
-  color: rgb(26,57,111);
+.softIcon {
+  color: rgb(26, 57, 111);
   text-decoration: none;
- 
 }
 
-.skillFont{
+.skillFont {
   color: black;
 }
 
-.skills{
+/* .skills{
   padding-top: 5%;
-}
+} */
 
-.info{
+.info {
   color: black;
-   padding-right: 23px;
+  padding-right: 23px;
 }
 
-.technologies__list{
+.technologies__list {
   display: flex;
   word-wrap: break-word;
 }

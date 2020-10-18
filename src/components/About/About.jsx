@@ -72,19 +72,24 @@ function About({ about }) {
     </div>
   )
 
-  
-
-
 
   return (
     <div id='about'>
       <h1 id='about-head'>ABOUT</h1>
-      <div>
-        <Image id='avatar' src={avatar} rounded />
+      <div className='avatar__bio'>
+        <div id='avatar__head'>
+          <Image id='avatar' src={avatar} rounded />
+        </div>
+        <div className="bio">
+          <p>{bio}</p>
+          <div className="skills">
+            <h3>SKILLS</h3>
+            <br />
+            {aboutData}
+          </div>
+        </div>
       </div>
-      <div className="bio">
-        <p>{bio}</p>
-      </div>
+
       <div id="technologies">
         <h3 id='technology_header'>TECHNOLOGIES</h3>
         <div className="technologies__list">
@@ -101,11 +106,6 @@ function About({ about }) {
               </div>
             })}
         </div>
-      </div>
-      <div className="skills">
-        <h3>SKILLS</h3>
-        <br />
-        {aboutData}
       </div>
     </div>
   )
