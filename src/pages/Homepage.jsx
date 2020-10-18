@@ -20,6 +20,8 @@ function Homepage() {
    getResumeData()
   }, [])
 
+
+
   return (
     <div>
       <Navi />

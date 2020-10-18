@@ -48,7 +48,7 @@ function Resume({ cv }) {
       <div className="save__cv">
         <p>Download CV</p>
         <IconButton color="primary" >
-          <GetAppIcon id='save__icon' fontSize="large" />
+          <GetAppIcon id='save__icon' fontSize="large" onClick={() => window.open(cv.CVLink)}/>
         </IconButton>
       </div>
 
