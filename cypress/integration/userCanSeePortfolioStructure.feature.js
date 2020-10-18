@@ -26,6 +26,11 @@ describe('Portfolio interface', () => {
       cy.get('.skillFont').should('contain', 'Test driven development')
       cy.get('.skillFont').should('contain', 'Version control')
     })
+    cy.get('#technologies').within(() => {
+      cy.get('#technology_header').should('contain', 'TECHNOLOGIES')
+      cy.get('.technology').should('contain', 'HTML')
+      cy.get('.technology').should('contain', 'CSS')
+    })
   })
 
   it('Social links should be available', () => {

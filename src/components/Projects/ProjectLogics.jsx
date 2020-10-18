@@ -23,7 +23,6 @@ function ProjectLogics({ projects }) {
   let name, details, image, link
 
   if (projects) {
-    console.log(projects.image)
     name = projects.name
     details = projects.details
     image = projects.image

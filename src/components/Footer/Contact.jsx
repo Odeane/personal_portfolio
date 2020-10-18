@@ -18,7 +18,6 @@ function Contact({ contact }) {
 
 
   if (contact) {
-    console.log(contact.email)
     street = contact.address.street
     city = contact.address.city
     state = contact.address.state

@@ -78,6 +78,9 @@
         "title": "Version control",
         "info": "I have experience in using git and github. I use github and git when pair programming and personally to track changes in my sorce code during development."
       }
+    },
+    "Tools":{
+      "technologies":["HTML","CSS","Javascript","React","React with redux","React Native", "Ruby", "Ruby on Rails", "Node.js","Postgresql","Mongodb","Cypress","Rspec","Git & Github", "Semaphore","Coveralls","Heroku","Netlify"]
     }
   }
 }

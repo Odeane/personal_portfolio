@@ -1,14 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './About.style.css'
 import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
 import BrightnessAutoIcon from '@material-ui/icons/BrightnessAuto';
 import BuildIcon from '@material-ui/icons/Build';
 import DescriptionIcon from '@material-ui/icons/Description';
-import { Image  } from 'semantic-ui-react'
-
+import { Image } from 'semantic-ui-react'
+import axios from 'axios';
+import Chip from '@material-ui/core/Chip';
+import DoneIcon from '@material-ui/icons/Done';
+import { makeStyles } from '@material-ui/core/styles';
 
 
 function About({ about }) {
+
+  const [tools, setTools] = useState([])
+
+  const getSkills = async () => {
+    let res = await axios.get('./ResumeData.json')
+    setTools(res.data.main.Tools.technologies)
+  }
+
+  useEffect(() => {
+    getSkills()
+  }, [])
+
   let bio,
     avatar,
     programmingtitle,
@@ -30,7 +45,6 @@ function About({ about }) {
     testsInfo = about.skills.tests.info
     version = about.skills.versioncontrol.title
     versionInfo = about.skills.versioncontrol.info
-
   }
 
   let aboutData = (
@@ -46,7 +60,7 @@ function About({ about }) {
         <p className='info'>{agileInfo}</p>
       </div>
       <div className="softIcon">
-      <BuildIcon />
+        <BuildIcon />
         <h6 className='skillFont'>{tests}</h6>
         <p className='info'>{testsInfo}</p>
       </div>
@@ -56,21 +70,42 @@ function About({ about }) {
         <p className='info'>{versionInfo}</p>
       </div>
     </div>
-  ) 
+  )
+
+  
+
+
 
   return (
     <div id='about'>
       <h1 id='about-head'>ABOUT</h1>
       <div>
         <Image id='avatar' src={avatar} rounded />
-        </div>
+      </div>
       <div className="bio">
         <p>{bio}</p>
       </div>
+      <div id="technologies">
+        <h3 id='technology_header'>TECHNOLOGIES</h3>
+        <div className="technologies__list">
+          {
+            tools.map(tool => {
+              return <div className='technology'>
+                <Chip
+                  variant="outlined"
+                  size="small"
+                  label={tool}
+                  clickable
+                  color="primary"
+                />
+              </div>
+            })}
+        </div>
+      </div>
       <div className="skills">
         <h3>SKILLS</h3>
-        <br/>
-        {aboutData} 
+        <br />
+        {aboutData}
       </div>
     </div>
   )
