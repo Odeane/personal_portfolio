@@ -1,9 +1,9 @@
-.jumbotron {
+/* .jumbotron {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 425px;
-}
+} */
 
 header {
   position: relative;
@@ -15,6 +15,7 @@ header {
   -webkit-background-size: cover !important;
   text-align: center;
   overflow: hidden;
+  color: #fff;
 }
 header:before {
   content: "";

@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container'
-import './Header.style.css'
+// import './Header.style.css'
 
 
 function Header({ header }) {
@@ -18,9 +18,8 @@ function Header({ header }) {
   return (
     <header>
       <div className="banner">
-        <div className="banner-text">
           <div>
-            <h1 className="headline">Hi, I'm {name}.</h1>
+            <h1 className="banner__headline">Hi, I'm {name}.</h1>
             <p id='occu'>{occupation}</p>
           </div>
           <div className="social">
@@ -29,7 +28,6 @@ function Header({ header }) {
             <i onClick={() => window.open(instagram)} className="fa fa-instagram" aria-hidden="true" />
             <i onClick={() => window.open(instagram)} className="fa fa-facebook" aria-hidden="true" />
           </div>
-        </div>
       </div>
     </header>
   )
