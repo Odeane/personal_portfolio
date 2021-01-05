@@ -25,7 +25,6 @@ function Navi() {
   return (
 
     <div className={`nav ${show && 'nav__blue'}`}>
-
       <div className="nav__menu">
         <Link smooth={true} duration={1000} onClick={() => scroll.scrollToTop()}>HOME</Link>
       </div>
@@ -41,9 +40,6 @@ function Navi() {
       <div className="nav__menu">
         <Link smooth={true} duration={1000} to={'contact__details'}>CONTACT</Link>
       </div>
-
-
-
     </div>
 
   )
