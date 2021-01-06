@@ -23,12 +23,32 @@ header {
     padding-top: 30px;
     background-color: rgba(44, 76, 117, 0.7);
     border-radius: 2em;
-    // vertical-align: middle;
+    vertical-align: middle;
     // margin: 0 auto;
     // text-align: center;
 
-    // &__headline{
-    //   width: 100%;
-    // }
+    &__headline {
+      font: 90px/1.1em "opensans-bold", sans-serif;
+      letter-spacing: -2px;
+      text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+      margin: 0 auto 18px auto;
+    }
+
+    &__socials {
+      color: white;
+      font-size: 30px;
+      padding-right: 13px;
+      text-decoration: none;
+      letter-spacing: 14px;
+
+      i:hover {
+        color: rgb(97, 146, 201);
+        cursor: pointer;
+      }
+    }
+
+    &__occu {
+      font-size: 20px;
+    }
   }
 }

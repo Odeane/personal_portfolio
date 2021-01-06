@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './About.style.css'
+// import './About.style.css'
 import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
 import BrightnessAutoIcon from '@material-ui/icons/BrightnessAuto';
 import BuildIcon from '@material-ui/icons/Build';
@@ -7,8 +7,9 @@ import DescriptionIcon from '@material-ui/icons/Description';
 import { Image } from 'semantic-ui-react'
 import axios from 'axios';
 import Chip from '@material-ui/core/Chip';
-import DoneIcon from '@material-ui/icons/Done';
-import { makeStyles } from '@material-ui/core/styles';
+import '../../sass/main.scss'
+
+
 
 
 function About({ about }) {
@@ -49,22 +50,22 @@ function About({ about }) {
 
   let aboutData = (
     <div className="softIcons">
-      <div className="softIcon">
+      <div className="softIcons__softIcon">
         <FitnessCenterIcon />
         <h6 className='skillFont'>{programmingtitle}</h6>
         <p className='info'>{programmingInfo}</p>
       </div>
-      <div className="softIcon">
+      <div className="softIcons__softIcon">
         <BrightnessAutoIcon />
         <h6 className='skillFont'>{agile}</h6>
         <p className='info'>{agileInfo}</p>
       </div>
-      <div className="softIcon">
+      <div className="softIcons__softIcon">
         <BuildIcon />
         <h6 className='skillFont'>{tests}</h6>
         <p className='info'>{testsInfo}</p>
       </div>
-      <div className="softIcon">
+      <div className="softIcons__softIcon">
         <DescriptionIcon />
         <h6 className='skillFont'>{version}</h6>
         <p className='info'>{versionInfo}</p>
@@ -74,24 +75,22 @@ function About({ about }) {
 
 
   return (
-    <div id='about'>
-      <h1 id='about-head'>ABOUT</h1>
-      <div className='avatar__bio'>
-        <div id='avatar__head'>
-          <Image id='avatar' src={avatar} rounded />
-        </div>
-        <div className="bio">
-          <p>{bio}</p>
+    <div className='about'>
+      <h1 className='about__header'>ABOUT</h1>
+      <div className="about__bio">
+        <div className="about__bio__text">
+          <p className='about__bio__para'>{bio}</p>
           <div className="skills">
-            <h3>SKILLS</h3>
-            <br />
+            <h3 className='skills__heading'>SKILLS</h3>
             {aboutData}
           </div>
         </div>
+        <Image className='about__bio__avatar' src={avatar} rounded />
       </div>
 
-      <div id="technologies">
-        <h3 id='technology_header'>TECHNOLOGIES</h3>
+
+      <div className="technologies">
+        <h3 className='technologies__header'>TECHNOLOGIES</h3>
         <div className="technologies__list">
           {
             tools.map(tool => {

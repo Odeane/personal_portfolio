@@ -1,0 +1,59 @@
+.about {
+  padding: 2rem 5rem;
+
+  &__header {
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+  }
+
+  &__bio {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+
+    &__para {
+      margin-top: 1rem;
+    }
+
+    &__avatar {
+      height: 400px;
+    }
+
+    &__text {
+      width: 48rem;
+    }
+  }
+
+  .skills {
+    margin-top: 2rem;
+    &__heading {
+      letter-spacing: 0.2rem;
+      font-weight: 300;
+    }
+  }
+
+  .softIcons {
+    display: flex;
+    // flex-wrap: wrap;
+
+    &__softIcon {
+      &:not(:first-child) {
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  .technologies {
+    &__header {
+      letter-spacing: 0.2rem;
+      font-weight: 300;
+      margin: 1rem 0;
+    }
+
+    &__list{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
