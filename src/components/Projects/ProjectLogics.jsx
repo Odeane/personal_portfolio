@@ -23,7 +23,6 @@ function ProjectLogics({ projects }) {
   let name, details, image, link
 
   if (projects) {
-    console.log(projects.image)
     name = projects.name
     details = projects.details
     image = projects.image
@@ -32,34 +31,30 @@ function ProjectLogics({ projects }) {
 
   const classes = useStyles();
 
-
-  
   return (
-    <div>
-      <div >
-        <Card className={classes.root}>
-          <CardActionArea onClick={()=>window.open(link)}  >
-            <CardMedia
-              className={classes.media}
-              image={image}
-              title="Contemplative Reptile" 
-            />
-            <CardContent>
-              <Typography  gutterBottom variant="h5" component="h2">
-                {name}
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                {details}
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-          <CardActions>
-            <Button onClick={() => window.open(link)} variant="outlined" size="small" color="primary">
-              View more
-            </Button>
-          </CardActions>
-        </Card>
-      </div>
+    <div className="pro">
+      <Card className={classes.root}>
+        <CardActionArea onClick={() => window.open(link)}  >
+          <CardMedia
+            className={classes.media}
+            image={image}
+            title="Contemplative Reptile"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              {name}
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              {details}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button onClick={() => window.open(link)} variant="outlined" size="small" color="primary">
+            View more
+    </Button>
+        </CardActions>
+      </Card>
     </div>
   )
 }

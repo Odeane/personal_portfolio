@@ -1,0 +1,38 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px;
+  height: 50px;
+  z-index: 1;
+  color: white !important;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+
+  &__blue {
+    background-color: rgb(23, 65, 121);
+  }
+
+  &__menu {
+    color: white;
+    padding-left: 1.5%;
+    font-weight: bolder;
+    font-size: 1.2rem;
+
+    @media (max-width: 1200px) {
+      font-size: 1rem;
+    }
+    @media (max-width: 900px) {
+      font-size: 0.8rem;
+    }
+    @media (max-width: 600px) {
+      font-size: 0.6rem;
+      color: rgb(23, 65, 121);
+    }
+
+    &:hover {
+      color: rgb(97, 126, 160);
+      cursor: pointer;
+    }
+  }
+}

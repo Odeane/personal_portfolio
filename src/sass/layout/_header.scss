@@ -1,0 +1,73 @@
+header {
+  position: relative;
+  height: 25rem;
+  background: #161415 url(/images/computer17.jpg) no-repeat top center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  // overflow: hidden;
+  // min-height: 500px;
+  // width: 100%;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+
+  .banner {
+    display: inline-block;
+    width: 85%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: rgba(44, 76, 117, 0.7);
+    border-radius: 2em;
+    vertical-align: middle;
+    // margin: 0 auto;
+    // text-align: center;
+
+    @media (max-width: 600px) {
+      padding-bottom: 0px;
+    }
+
+    &__headline {
+      font-size: 6rem;
+      font-weight: 400;
+      letter-spacing: -2px;
+      text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+      margin: 0 auto 18px auto;
+
+      @media (max-width: 1200px) {
+        font-size: 5rem;
+      }
+      @media (max-width: 900px) {
+        font-size: 3rem;
+      }
+      @media (max-width: 600px) {
+        font-size: 2rem;
+      }
+    }
+
+    &__socials {
+      color: white;
+      font-size: 30px;
+      padding-right: 13px;
+      text-decoration: none;
+      letter-spacing: 14px;
+
+      @media (max-width: 600px) {
+        font-size: 20px;
+      }
+
+      i:hover {
+        color: rgb(97, 146, 201);
+        cursor: pointer;
+      }
+    }
+
+    &__occu {
+      font-size: 20px;
+    }
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import PhoneInTalkIcon from '@material-ui/icons/PhoneInTalk';
-import './contact.css'
+
 
 function Contact({ contact }) {
 
@@ -18,7 +18,6 @@ function Contact({ contact }) {
 
 
   if (contact) {
-    console.log(contact.email)
     street = contact.address.street
     city = contact.address.city
     state = contact.address.state
@@ -30,34 +29,36 @@ function Contact({ contact }) {
     github = contact.social.github
   }
 
-
-
   return (
     <div className='footer' >
       <div className="footer__image" />
-      <div id='contact__details'>
-        <div className="contact">
-          <div className="footer__icons">
-          <LocationOnIcon />
-          <h4>Address</h4>
+      <div className='contact'>
+
+        <div className="contact__details">
+          <div className="contact__details-head">
+            <LocationOnIcon />
+            <h4>Address</h4>
           </div>
           <p>{street} <br />{zip} <br />{city} <br />{state}</p>
         </div>
-        <div className="contact">
-        <div className="footer__icons">
+
+        <div className="contact__details">
+          <div className="contact__details-head">
             <MailOutlineIcon />
             <h4>E-mail</h4>
-          </div> 
+          </div>
           <p>{email}</p>
         </div>
-        <div className="contact">
-          <div className="footer__icons">
-          <PhoneInTalkIcon />
-          <h4>Phone</h4>
+
+        <div className="contact__details">
+          <div className="contact__details-head">
+            <PhoneInTalkIcon />
+            <h4>Phone</h4>
           </div>
           <p>{phone}</p>
         </div>
-        <div className="social">
+
+        <div className="socials">
           <i id='github__icon' onClick={() => window.open(github)} className="fa fa-github" aria-hidden="true" />
           <i id='linkedin__icon' onClick={() => window.open(linkedin)} className="fa fa-linkedin" aria-hidden="true" />
           <i id='instagram__icon' onClick={() => window.open(instagram)} className="fa fa-instagram" aria-hidden="true" />

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import './nav.style.css'
-import { Link, animateScroll as scroll} from 'react-scroll'
+// import './nav.style.css'
+import '../../sass/main.scss'
+import { Link, animateScroll as scroll } from 'react-scroll'
 
 
 
@@ -23,26 +24,22 @@ function Navi() {
 
   return (
 
-    <div className={`nav ${show && 'nav__black'}`}>
-      
-      <div className="menu">
-      <Link smooth={true} duration={1000} onClick={()=> scroll.scrollToTop() }>HOME</Link>
+    <div className={`nav ${show && 'nav__blue'}`}>
+      <div className="nav__menu">
+        <Link smooth={true} duration={1000} onClick={() => scroll.scrollToTop()}>HOME</Link>
       </div>
-      <div className="menu">
-      <Link smooth={true} duration={1000} to={'about'}>ABOUT</Link>
+      <div className="nav__menu">
+        <Link smooth={true} duration={1000} to={'about'}>ABOUT</Link>
       </div>
-      <div className="menu">
-      <Link smooth={true} duration={1000} to={'project'}>PROJECTS</Link>
+      <div className="nav__menu">
+        <Link smooth={true} duration={1000} to={'project'}>PROJECTS</Link>
       </div>
-      <div className="menu">
-      <Link smooth={true} duration={1000} to={'heading__text'}>RESUME</Link>
+      <div className="nav__menu">
+        <Link smooth={true} duration={1000} to={'heading__text'}>RESUME</Link>
       </div>
-      <div className="menu">
-      <Link smooth={true} duration={1000} to={'contact__details'}>CONTACT</Link>
+      <div className="nav__menu">
+        <Link smooth={true} duration={1000} to={'contact__details'}>CONTACT</Link>
       </div>
-
-
-
     </div>
 
   )

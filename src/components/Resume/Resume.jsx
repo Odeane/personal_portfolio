@@ -8,7 +8,6 @@ import TimelineDot from '@material-ui/lab/TimelineDot';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import Typography from '@material-ui/core/Typography';
 import GetAppIcon from '@material-ui/icons/GetApp';
-import "./resume.css"
 import IconButton from '@material-ui/core/IconButton';
 
 function Resume({ cv }) {
@@ -43,12 +42,12 @@ function Resume({ cv }) {
 
 
   return (
-    <div className='resume__heading'>
-      <h1 id='heading__text'>RESUME</h1>
-      <div className="save__cv">
+    <div className='resume'>
+      <h1 className='resume__heading'>RESUME</h1>
+      <div className="resume__save">
         <p>Download CV</p>
         <IconButton color="primary" >
-          <GetAppIcon id='save__icon' fontSize="large" onClick={() => window.open(cv.CVLink)}/>
+          <GetAppIcon className='save-icon' fontSize="large" onClick={() => window.open(cv.CVLink)}/>
         </IconButton>
       </div>
 
