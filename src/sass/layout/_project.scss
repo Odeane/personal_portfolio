@@ -7,15 +7,12 @@
     text-align: center;
 
     @media (max-width: 1250px) {
-      color: darkcyan;
     }
 
     @media (max-width: 900px) {
-      color: gold;
     }
 
     @media (max-width: 600px) {
-      color: pink;
       font-size: 1.4rem;
     }
   }
@@ -26,11 +23,9 @@
     justify-content: space-evenly;
 
     @media (max-width: 1250px) {
-      color: darkcyan;
     }
 
     @media (max-width: 900px) {
-      color: darkturquoise;
     }
 
     @media (max-width: 600px) {
@@ -41,12 +36,10 @@
 .pro {
   @media (max-width: 1250px) {
     margin-bottom: 2rem;
-
   }
 
   @media (max-width: 900px) {
     margin-bottom: 2rem;
-
   }
 
   @media (max-width: 600px) {

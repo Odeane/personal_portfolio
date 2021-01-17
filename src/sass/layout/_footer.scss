@@ -37,6 +37,7 @@
     color: rgb(26, 57, 111);
     display: flex;
     justify-content: space-between;
+    letter-spacing: 1rem;
 
     @media (max-width: 600px) {
           justify-content: space-around;

@@ -56,6 +56,10 @@ header {
       text-decoration: none;
       letter-spacing: 14px;
 
+      @media (max-width: 600px) {
+        font-size: 20px;
+      }
+
       i:hover {
         color: rgb(97, 146, 201);
         cursor: pointer;
