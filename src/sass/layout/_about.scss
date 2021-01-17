@@ -1,9 +1,25 @@
 .about {
-  padding: 2rem 5rem;
+  padding: 2rem 4rem;
+
+  @media (max-width: 900px) {
+    margin-top: 1rem;
+    padding: 0;
+  }
+  @media (max-width: 600px) {
+    margin-top: 2rem;
+    padding: 0;
+  }
 
   &__header {
     letter-spacing: 0.2rem;
     font-weight: 300;
+
+    @media (max-width: 1250px) {
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      font-size: 1.4rem;
+    }
   }
 
   &__bio {
@@ -14,14 +30,39 @@
 
     &__para {
       margin-top: 1rem;
+
+      @media (max-width: 1250px) {
+        text-align: center;
+      }
+      @media (max-width: 600px) {
+        font-size: 0.6rem;
+      }
     }
 
     &__avatar {
-      height: 400px;
+      height: 350px;
+
+      @media (max-width: 1250px) {
+        padding-top: 1.5rem;
+        margin: auto;
+      }
     }
 
     &__text {
       width: 48rem;
+
+      @media (max-width: 1250px) {
+        margin: auto;
+      }
+
+      @media (max-width: 900px) {
+        margin: auto;
+      }
+
+      @media (max-width: 600px) {
+        margin: auto;
+        font-size: 0.6rem;
+      }
     }
   }
 
@@ -30,16 +71,37 @@
     &__heading {
       letter-spacing: 0.2rem;
       font-weight: 300;
+
+      @media (max-width: 600px) {
+        text-align: center;
+        font-size: 1rem;
+      }
     }
   }
 
   .softIcons {
     display: flex;
-    // flex-wrap: wrap;
+
+    @media (max-width: 600px) {
+      flex-wrap: wrap;
+      // &:first-child {
+      //   padding-left: 2rem;
+      // }
+    }
 
     &__softIcon {
       &:not(:first-child) {
         padding-left: 2rem;
+
+        @media (max-width: 600px) {
+          padding-left: 0rem;
+        }
+      }
+
+      .skillFont {
+        @media (max-width: 600px) {
+          font-size: 0.8rem;
+        }
       }
     }
   }
@@ -49,9 +111,14 @@
       letter-spacing: 0.2rem;
       font-weight: 300;
       margin: 1rem 0;
+
+      @media (max-width: 600px) {
+        text-align: center;
+        font-size: 1rem;
+      }
     }
 
-    &__list{
+    &__list {
       display: flex;
       flex-wrap: wrap;
     }

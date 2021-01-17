@@ -15,6 +15,17 @@
     align-items: center;
     justify-content: space-evenly;
 
+    @media (max-width: 1250px) {
+    }
+
+    @media (max-width: 900px) {
+    }
+
+    @media (max-width: 600px) {
+      font-size: 0.8rem;
+      display: inline;
+    }
+
     &__details {
       &-head {
         color: rgb(26, 57, 111);
@@ -26,5 +37,10 @@
     color: rgb(26, 57, 111);
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 600px) {
+          justify-content: space-around;
+
+    }
   }
 }
