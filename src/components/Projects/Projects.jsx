@@ -1,5 +1,5 @@
 import React from 'react'
-import './project.style.css'
+// import './project.style.css'
 import ProjectLogics from './ProjectLogics'
 
 function Projects({ data }) {
@@ -15,7 +15,7 @@ function Projects({ data }) {
   return (
     <div id="project" >
     <h1 className="project__heading">PROJECTS</h1>
-    <div className="projects">
+      <div className="project__projects">
         <ProjectLogics projects={bidspace} />
         <ProjectLogics projects={rockpaperscissors} />
         <ProjectLogics projects={newsonrails} />

@@ -31,11 +31,7 @@ function ProjectLogics({ projects }) {
 
   const classes = useStyles();
 
-
-  
   return (
-    <div>
-      <div >
         <Card className={classes.root}>
           <CardActionArea onClick={()=>window.open(link)}  >
             <CardMedia
@@ -58,8 +54,6 @@ function ProjectLogics({ projects }) {
             </Button>
           </CardActions>
         </Card>
-      </div>
-    </div>
   )
 }
 

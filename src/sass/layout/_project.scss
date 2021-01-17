@@ -1,0 +1,15 @@
+.project {
+  &__heading {
+    margin: 2rem 0;
+
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &__projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}

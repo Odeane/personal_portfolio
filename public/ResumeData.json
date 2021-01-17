@@ -80,7 +80,7 @@
       }
     },
     "Tools":{
-      "technologies":["HTML","CSS","Javascript","React","React with redux","React Native", "Ruby", "Ruby on Rails", "Node.js","Postgresql","Mongodb","Cypress","Rspec","Git & Github", "Semaphore","Coveralls","Heroku","Netlify"]
+      "technologies":["HTML","Javascript","CSS","SASS","React","React with redux","React Native", "Ruby", "Ruby on Rails", "Node.js","Postgresql","Mongodb","Cypress","Rspec","Git & Github", "Semaphore","Coveralls","Heroku","Netlify"]
     }
   }
 }
